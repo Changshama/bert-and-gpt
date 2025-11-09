@@ -9,7 +9,16 @@ A Gradio web application that compares Named Entity Recognition (NER) between a 
 pip install -r requirements.txt
 ```
 
-2. The OpenAI API key is already configured in the `.env` file.
+2. Create a `.env` file in the project root and add your OpenAI API key:
+```bash
+OPENAI_API_KEY=your-api-key-here
+```
+
+To get an OpenAI API key:
+- Visit https://platform.openai.com/api-keys
+- Sign up or log in
+- Create a new API key
+- Copy and paste it into your `.env` file
 
 ## Run the App
 
