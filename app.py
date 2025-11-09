@@ -10,10 +10,8 @@ load_dotenv()
 # Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-# Load DistilBERT model fine-tuned on WNUT-17
-# Using a pre-trained model on WNUT-17 dataset
-model_name = "dslim/distilbert-NER"  # This is fine-tuned on CoNLL-2003, but similar task
-# If you have a specific WNUT-17 model, replace with: "your-username/distilbert-wnut17"
+# Load DistilBERT model fine-tuned on CoNLL-200
+model_name = "dslim/distilbert-NER"
 
 print("Loading DistilBERT model...")
 tokenizer = AutoTokenizer.from_pretrained(model_name)
